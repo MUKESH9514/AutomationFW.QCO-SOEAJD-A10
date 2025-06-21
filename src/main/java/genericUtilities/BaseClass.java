@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -45,7 +46,7 @@ public class BaseClass {
 	@BeforeClass(groups = {"SmokeSuite", "RegressionSuite"})
 	public void bcConfig( /*String BValue*/) throws IOException {
 		String URL = fUtil.readDataFromPropertyFile("url");
-		driver = new EdgeDriver();
+		driver = new FirefoxDriver();
 		
          /*---- For cross browser execution-
 		

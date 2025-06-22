@@ -2,12 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeSuite"/>
+      </run>
+    </groups>
     <classes>
       <class name="inventoryTests.AddProductToCartUsingBaseClassTest">
         <methods>
           <include name="amConfig"/>
-          <include name="bmConfig"/>
           <include name="bcConfig"/>
+          <include name="bmConfig"/>
           <include name="acConfig"/>
           <include name="tc_001_addProductToCart"/>
           <include name="bsConfig"/>

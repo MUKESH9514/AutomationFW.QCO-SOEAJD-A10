@@ -51,6 +51,7 @@ public class AddLowestPriceProtuctToCartTest {
         		iip.clickOnAddToCartBtn();
         		
         		ip.clickOnCartContainer();
+        		System.out.println("Hi-----");
         		
         		//Validate in the cart Page
         		CartPage cp = new CartPage(driver);
